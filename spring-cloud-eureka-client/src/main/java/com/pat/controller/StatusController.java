@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @Modify
  * @since
  */
-@RestController("/actuator")
+@RestController
 public class StatusController {
 
-        @GetMapping("/status")
+    @GetMapping("/status")
     public String status() {
         return "OK";
     }
